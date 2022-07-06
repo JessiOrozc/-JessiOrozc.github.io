@@ -1,0 +1,336 @@
+body{
+    margin: 0px;
+}
+
+.banner {
+    background: #FF869E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner img {
+    height: 160px;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25;
+    margin: 25px 25px;
+    gap: 20px;
+}
+
+.item {
+    width: 300px;
+}
+
+.nav-container{
+    display:flex;
+    width:100%;
+    background: #A10035; 
+    justify-content: space-between;
+}
+
+.nav-img{
+    width:50px
+}
+
+.nav-items{
+    display:flex;
+    justify-content: flex-end;
+    width: 70%;
+    text-align:center;
+    align-items: center;
+}
+
+.nav-items a{
+    color: rgb(7, 7, 7);
+    padding: 20px;
+    height:fit-content;
+}
+
+
+.nav-items a:hover{
+    background: #FF869E;
+    color: rgb(243, 243, 241);
+    cursor:pointer;
+}
+
+.caja-blanca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4000;
+    height: 336;
+}
+
+.caja-blanca img{
+    width: 4000;
+    height: 336;
+    margin: 30px;
+}
+.centro{
+    background-color: black;
+}
+
+/* galeria */
+.gallery {
+    display: flex;
+    flex-direction: colum;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.gallery-item {
+    margin: 20px;
+}
+
+.gallery-item .thumbnail {
+    width: 240px;
+    border: 2px solid rgb(23, 23, 24);
+    justify-content: space-evenly;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.contenedor{
+    width: 99%;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    width: 70vw;
+}
+
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 4em;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 40px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+    animation-delay: 0.3s;
+}
+#facebook {
+    animation-delay: 0.7s;
+}
+#github {
+    animation-delay: 0.1s;
+}
+
+@keyframes animate {
+    from {
+    filter: hue-rotate(0deg);
+    }
+    to {
+    filter: hue-rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .contenedor{
+        width: 99%;
+    }
+    .banner{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+    .banner img{
+        height: 100px;
+        width: 150px;
+    }
+    .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 13;
+        margin: 13px 13px;
+        gap: 10px;
+    }
+    .item{
+        width: 100px;
+    }
+    .nav-container{
+        width:100%;
+        justify-content: space-evenly;
+    }
+    .nav-img{
+        width:25px;
+    }
+    .nav-items{
+        justify-content: space-between;;
+        width: 10%;
+    }
+    .nav-items a{
+        color: rgb(7, 7, 7);
+        align-content: space-around;
+    }
+    .nav-items a:hover{
+        background: #A10035;
+        color: rgb(243, 243, 241);
+        cursor:pointer;
+    }
+    .caja-blanca{
+        justify-content: space-evenly;
+        justify-content: column;
+        width: 2000;
+        height: 168;
+    }
+    .caja-blanca img{
+        width: 2000;
+        height: 168;
+        margin: 15px;
+    }
+    .centro{
+        background-color: black;
+    }
+    .gallery{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-shrink: 1;
+        margin-top: 25px;
+        align-items: center;;
+    }
+    .gallery-item{
+        margin: 10px;;
+    }
+    .gallery-item .thumbnail{
+        width: 120px;
+        justify-content: space-evenly;
+        border-radius: 2px;
+        align-items: center;
+    }
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 19vh;
+        width: 10vw;
+    }
+    #apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 2em;
+}
+}
+
+@media screen (max-width: 768px) and (max-width: 990px){
+    .contenedor{
+        width: 99%;
+    }
+    .banner{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+    .banner img{
+        height: 100px;
+        width: 150px;
+    }
+    .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 13;
+        margin: 13px 13px;
+        gap: 10px;
+    }
+    .item{
+        width: 100px;
+    }
+    .nav-container{
+        width:100%;
+        justify-content: space-evenly;
+    }
+    .nav-img{
+        width:25px;
+    }
+    .nav-items{
+        justify-content: space-between;;
+        width: 10%;
+    }
+    .nav-items a{
+        color: rgb(7, 7, 7);
+        align-content: space-around;
+    }
+    .nav-items a:hover{
+        background: #FF869E;
+        color: rgb(243, 243, 241);
+        cursor:pointer;
+    }
+    .caja-blanca{
+        justify-content: space-evenly;
+        justify-content: column;
+        width: 2000;
+        height: 168;
+    }
+    .caja-blanca img{
+        width: 2000;
+        height: 168;
+        margin: 15px;
+    }
+    .centro{
+        background-color: black;
+    }
+    .gallery{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-shrink: 1;
+        margin-top: 25px;
+        align-items: center;;
+    }
+    .gallery-item{
+        margin: 10px;;
+    }
+    .gallery-item .thumbnail{
+        width: 120px;
+        justify-content: space-evenly;
+        border-radius: 2px;
+        align-items: center;
+    }
+    #apple,
+    #twitter,
+    #github,
+    #facebook {
+        font-size: 1em;
+        background-color: #18191f;
+    }
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 19vh;
+        width: 10vw;
+    }
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 2em;
+}
+}
